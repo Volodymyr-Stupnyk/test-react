@@ -4,6 +4,8 @@ import SearchBar from "./component/SearchBar/SearchBar";
 import React, { useState } from 'react';
 import SelectCoffeeSize from "./component/SelectCoffeeSize/SelectCoffeeSize";
 import CheckBox from "./component/CheckBox/CheckBox";
+import LoginFormControl from "./component/LoginFormControl/LoginFormControl";
+import FeedbackForm from "./component/FeedbackForm/FeedbackForm";
 
 
 
@@ -28,7 +30,11 @@ const App = () => {
       <h2>"""""Радіо-кнопка"""""</h2>
       <SelectCoffeeSize checked={coffeeSize} onChange={setCoffeeSize} />
       <h2>CheckBox</h2>
-      <CheckBox  />
+      <CheckBox />
+      <h2>Контрольована форма</h2>
+      <LoginFormControl />
+      <h2>Formik</h2>
+      <FeedbackForm/>
       
     </>
   );
